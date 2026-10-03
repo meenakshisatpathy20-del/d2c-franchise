@@ -22,34 +22,51 @@
 
   --font-display: "Plus Jakarta Sans", sans-serif;
   --font-body: "Inter", sans-serif;
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
 
-body {
-  font-family: var(--font-body);
-  background: #fafaf7;
-  color: var(--color-navy-900);
-  overflow-x: clip;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    font-family: var(--font-body);
+    background: #fafaf7;
+    color: var(--color-navy-900);
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
 }
 
 @utility glass {
@@ -77,6 +94,13 @@ img {
 @utility section {
   padding-block: clamp(3rem, 8vw, 6rem);
   padding-inline: clamp(1rem, 4vw, 3rem);
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @utility btn {
