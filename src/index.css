@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* ===== D2C BRAND TOKENS (from the real logo) ===== */
+@theme {
+  --color-saffron-50:  #fff3eb;
+  --color-saffron-100: #ffe1cc;
+  --color-saffron-400: #ff7a2b;
+  --color-saffron-500: #fe5f00;
+  --color-saffron-600: #e05400;
+
+  --color-leaf-50:  #edf8ec;
+  --color-leaf-100: #d3efd0;
+  --color-leaf-400: #1fa811;
+  --color-leaf-500: #128807;
+  --color-leaf-600: #0e6e05;
+
+  --color-navy-50:  #eeeefb;
+  --color-navy-100: #d6d6f5;
+  --color-navy-400: #2a2ab0;
+  --color-navy-500: #00007f;
+  --color-navy-700: #00005c;
+  --color-navy-900: #05051f;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* ===== BASE ===== */
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #fafaf7;
+  color: var(--color-navy-900);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== CUSTOM UTILITIES ===== */
+@utility glass {
+  background: rgb(255 255 255 / 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgb(255 255 255 / 0.6);
+  box-shadow: 0 8px 32px rgb(0 0 127 / 0.08);
+}
+
+@utility glass-dark {
+  background: rgb(5 5 31 / 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+@utility text-gradient {
+  background: linear-gradient(90deg, var(--color-saffron-500), #ffa43a 45%, var(--color-leaf-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility section {
+  padding-block: clamp(3rem, 8vw, 6rem);
+  padding-inline: clamp(1rem, 4vw, 3rem);
+}
+
+/* ===== BUTTONS ===== */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3
+           font-semibold transition duration-200 active:scale-95 cursor-pointer;
+  }
+  .btn-primary {
+    @apply btn bg-saffron-500 text-white shadow-lg shadow-saffron-500/30
+           hover:bg-saffron-600;
+  }
+  .btn-green {
+    @apply btn bg-leaf-500 text-white shadow-lg shadow-leaf-500/30 hover:bg-leaf-600;
+  }
+  .btn-outline {
+    @apply btn border-2 border-navy-500 text-navy-500 hover:bg-navy-500 hover:text-white;
+  }
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-saffron-500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
