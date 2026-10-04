@@ -13,7 +13,7 @@ export default function CtaBand() {
             <div>
               <h2 className="text-3xl font-extrabold md:text-5xl">Invest once, earn forever.</h2>
               <p className="mt-4 max-w-xl text-white/80">
-                Apply in 2 minutes. Our franchise team will call you to discuss the right model for your city.
+                              Apply online. Our franchise team will call you to discuss the right model for your city.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link to="/apply" className="btn bg-white text-saffron-600 shadow-lg hover:bg-saffron-50">

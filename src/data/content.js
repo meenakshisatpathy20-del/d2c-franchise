@@ -89,7 +89,7 @@ export const pillars = [
 export const storeModels = [
   {
     id: '500',
-    name: 'D2C Mall Mini',
+    name: 'D2C Mall',
     size: '500 sqft',
     investment: '₹13 Lakhs',
     package: '₹11 Lakhs',
@@ -114,13 +114,12 @@ export const storeModels = [
   },
   {
     id: '1000',
-    name: 'D2C Mall Classic',
+    name: 'D2C Mall',
     size: '1000 sqft',
     investment: '₹22 Lakhs',
     package: '₹21 Lakhs',
     image: '/images/store-2.webp',
     color: 'navy',
-    popular: true,
     capex: [
       ['Franchise Fee', '₹1 Lakh'],
       ['Fixtures & Lighting', '₹5 Lakhs'],
@@ -135,12 +134,12 @@ export const storeModels = [
     ],
     staff: ['Store Manager – ₹30K', 'Housekeeping – ₹10K', 'Sales Staff (2) – ₹30K'],
     revenue: '₹15 Lakhs',
-    margin: '₹6 Lakhs',
+    margin: null,
     marginPct: '30%',
   },
   {
     id: '2000',
-    name: 'D2C Mall Flagship',
+    name: 'D2C Mall',
     size: '2000 sqft',
     investment: '₹55 Lakhs',
     package: '₹51 Lakhs',
@@ -242,7 +241,7 @@ export const experienceModels = [
 ]
 
 export const roiNote =
-  '*As per company projections. Actual returns depend on location, operations and market conditions.'
+  '*ROI as stated in the company brochure. Actual returns depend on location, operations and market conditions.'
 
 export const operatingModels = [
   {
@@ -263,8 +262,6 @@ export const comparison = {
     ['Investment', '~₹2 Crore', '~₹3.5 Crore', '~₹20 Lakhs', 'From ₹13 Lakhs'],
     ['Royalty', '—', '7% of sales', '15% of sales', '0%'],
     ['Margin', '~10%', '~50%', '~50%', '30–50%'],
-    ['Buyback on exit', 'No', 'No', 'No', '90% of inventory'],
-    ['Celebrity marketing', 'No', 'No', 'No', 'Yes'],
   ],
 }
 
@@ -395,10 +392,10 @@ export const leisure = {
 
 export const stores = [
   { city: 'Gurugram', size: '1,200 sqft', status: 'Operational', image: '/images/store-gurugram-real.webp' },
-  { city: 'Patna', size: '400 sqft', status: 'Operational', image: '/images/store-1.webp' },
-  { city: 'Ghaziabad', size: '300 sqft', status: 'Operational', image: '/images/store-4.webp' },
-  { city: 'Varanasi', size: '—', status: 'Coming Soon', image: '/images/store-5.webp' },
-  { city: 'Hyderabad', size: '—', status: 'Coming Soon', image: '/images/store-6.webp' },
+  { city: 'Patna', size: '400 sqft', status: 'Operational', image: null },
+  { city: 'Ghaziabad', size: '300 sqft', status: 'Operational', image: null },
+  { city: 'Varanasi', size: null, status: 'In pipeline', image: null },
+  { city: 'Hyderabad', size: null, status: 'In pipeline', image: null },
 ]
 
 export const storeGallery = [
@@ -492,9 +489,9 @@ export const faqs = [
 
 export const formOptions = {
   models: [
-    '500 sqft – D2C Mall Mini (₹13 L)',
-    '1000 sqft – D2C Mall Classic (₹22 L)',
-    '2000 sqft – D2C Mall Flagship (₹55 L)',
+    'D2C Mall – 500 sqft (~₹13 L)',
+    'D2C Mall – 1000 sqft (~₹22 L)',
+    'D2C Mall – 2000 sqft (~₹55 L)',
     'Kasrat Gym (₹51 L)',
     'Leisure Cafe (₹21 L)',
     'Gaming Zone (₹1 Cr)',
@@ -515,3 +512,39 @@ export const formOptions = {
     'Lakshadweep', 'Puducherry',
   ],
 }
+
+export const investmentSplit = [
+  {
+    id: '500',
+    label: '500 sqft',
+    total: 13,
+    parts: [
+      ['Inventory', 10],
+      ['Franchise Fee', 1],
+      ['Fixtures & Lighting', 1],
+      ['Misc. CAPEX', 1],
+    ],
+  },
+  {
+    id: '1000',
+    label: '1000 sqft',
+    total: 22,
+    parts: [
+      ['Inventory', 15],
+      ['Fixtures & Lighting', 5],
+      ['Franchise Fee', 1],
+      ['Misc. CAPEX', 1],
+    ],
+  },
+  {
+    id: '2000',
+    label: '2000 sqft',
+    total: 55,
+    parts: [
+      ['Inventory', 35],
+      ['Fixtures & Lighting', 15],
+      ['Misc. CAPEX', 4],
+      ['Franchise Fee', 1],
+    ],
+  },
+]

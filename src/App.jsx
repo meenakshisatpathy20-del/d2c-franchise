@@ -5,13 +5,14 @@ import ComingSoon from './pages/ComingSoon'
 import NotFound from './pages/NotFound'
 
 const Home = lazy(() => import('./pages/Home'))
+const Models = lazy(() => import('./pages/Models'))
 
 export default function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="models" element={<ComingSoon title="Franchise Models" />} />
+        <Route path="models" element={<Models />} />
         <Route path="why-d2c" element={<ComingSoon title="Why D2C" />} />
         <Route path="brands" element={<ComingSoon title="Brands" />} />
         <Route path="stores" element={<ComingSoon title="Stores" />} />

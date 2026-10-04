@@ -10,6 +10,7 @@ import MobileNav from './MobileNav'
 import Footer from './Footer'
 import WhatsAppButton from './WhatsAppButton'
 import PageLoader from '../ui/PageLoader'
+import { setLenis } from '../../lib/scroll'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -21,6 +22,7 @@ export default function Layout() {
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.1 })
     lenisRef.current = lenis
+    setLenis(lenis)
     lenis.on('scroll', ScrollTrigger.update)
     const tick = (time) => lenis.raf(time * 1000)
     gsap.ticker.add(tick)
@@ -29,6 +31,7 @@ export default function Layout() {
       gsap.ticker.remove(tick)
       lenis.destroy()
       lenisRef.current = null
+      setLenis(null)
     }
   }, [])
 
