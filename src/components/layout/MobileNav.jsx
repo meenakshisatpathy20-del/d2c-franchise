@@ -9,7 +9,7 @@ const tabs = [
   { to: '/', label: 'Home', icon: House },
   { to: '/models', label: 'Models', icon: LayoutGrid },
   { to: '/apply', label: 'Apply', icon: Rocket, primary: true },
-  { to: '/brands', label: 'Brands', icon: ShoppingBag },
+  { to: '/catalogue', label: 'Catalogue', icon: ShoppingBag },
 ]
 
 export default function MobileNav() {
@@ -25,7 +25,7 @@ export default function MobileNav() {
 
   return (
     <>
-      <header className="glass sticky top-0 z-40 flex items-center justify-between px-4 py-3 lg:hidden">
+      <header className="sticky top-0 z-40 flex h-16 items-center justify-between border-b border-navy-50 bg-white/95 px-4 backdrop-blur-xl lg:hidden">
         <Link to="/">
           <img src={logos.mall} alt="D2C Mall" className="h-9 w-auto" />
         </Link>

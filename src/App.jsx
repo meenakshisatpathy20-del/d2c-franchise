@@ -1,11 +1,13 @@
 import { lazy } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Navigate, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import ComingSoon from './pages/ComingSoon'
 import NotFound from './pages/NotFound'
 
 const Home = lazy(() => import('./pages/Home'))
 const Models = lazy(() => import('./pages/Models'))
+const Catalogue = lazy(() => import('./pages/Catalogue'))
+const BrandPage = lazy(() => import('./pages/BrandPage'))
 
 export default function App() {
   return (
@@ -14,7 +16,9 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="models" element={<Models />} />
         <Route path="why-d2c" element={<ComingSoon title="Why D2C" />} />
-        <Route path="brands" element={<ComingSoon title="Brands" />} />
+        <Route path="catalogue" element={<Catalogue />} />
+        <Route path="catalogue/:brandId" element={<BrandPage />} />
+        <Route path="brands" element={<Navigate to="/catalogue" replace />} />
         <Route path="stores" element={<ComingSoon title="Stores" />} />
         <Route path="about" element={<ComingSoon title="About Us" />} />
         <Route path="faq" element={<ComingSoon title="FAQ" />} />
