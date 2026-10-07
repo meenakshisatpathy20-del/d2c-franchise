@@ -67,25 +67,24 @@ export const marketSplit = {
 export const problems = [
   {
     title: 'High Investment',
-    text: 'Big-brand retail franchises demand ₹1.5 – 3.5 Crore before the shutter even opens.',
+    text: 'Expensive franchise cost of retail outlets — ₹1.5 Crore to ₹3.5 Crore for big retail brands.',
   },
   {
     title: 'Low ROI',
-    text: 'Thin margins plus royalty charged as a percentage of total sales stretch the break-even period.',
+    text: 'Low margins and additional royalty charged as a percentage of total sales, decreasing ROI and increasing the break-even period.',
   },
   {
     title: 'Lack of Support',
-    text: 'Partners are left alone on marketing, training, software and re-ordering after the fee is paid.',
+    text: 'Less support in franchise running — long-term marketing, sales & training, software & re-ordering.',
   },
 ]
 
 export const pillars = [
-  { title: 'Multi D2C Brands', text: 'Many homegrown brands under one umbrella.' },
-  { title: 'Product-Market Fit', text: 'Fast-moving products with constant refresh.' },
-  { title: 'Bollywood Marketing', text: 'Campaigns with A-list celebrities.' },
-  { title: 'Cross-sell & Upsell', text: 'Strong basket value across categories.' },
+  { title: 'Multi D2C Brands', text: 'Under one umbrella.' },
+  { title: 'Product Market Fit', text: 'And constant refresh.' },
+  { title: 'Bollywood Marketing', text: 'Marketing with Bollywood celebs.' },
+  { title: 'Cross-sell & Upsell', text: 'Strong cross-sell & upsell potential.' },
 ]
-
 export const storeModels = [
   {
     id: '500',
@@ -213,7 +212,7 @@ export const experienceModels = [
   {
     id: 'mega',
     name: 'D2C Mall Mega',
-    tagline: 'Complete lifestyle destination under one roof',
+    tagline: 'Leisure Cafe, Gaming Zone, Kasrat Gym, D2C World, Pharmacy & Daily Essentials',
     investment: '₹2.51 Crore',
     size: '12,500 sqft',
     roi: '+50% (18–24 months)*',
@@ -241,21 +240,20 @@ export const experienceModels = [
 ]
 
 export const roiNote =
-  '*ROI as stated in the company brochure. Actual returns depend on location, operations and market conditions.'
+  '*ROI as stated in the company brochures. Actual returns depend on location, operations and market conditions.'
 
 export const operatingModels = [
   {
     code: 'FOFO',
     name: 'Franchise Owned, Franchise Operated',
-    text: 'You invest and run the store yourself with full company support.',
+    text: 'You own the store and you operate it.',
   },
   {
     code: 'FOCO',
     name: 'Franchise Owned, Company Operated',
-    text: 'You invest; the company runs day-to-day operations for you.',
+    text: 'You own the store and the company operates it.',
   },
 ]
-
 export const comparison = {
   columns: ['Electronics Brand Store', 'QSR Chain', 'Tea Cafe Chain', 'D2C Mall'],
   rows: [
@@ -266,17 +264,17 @@ export const comparison = {
 }
 
 export const support = [
-  { title: 'Celebrity Endorsement', text: 'Bollywood brand ambassadors on your posters and ads.' },
-  { title: 'Hoardings & Visibility', text: 'Glow sign boards and street sign boards.' },
-  { title: 'Radio Promotions', text: 'Local radio campaigns in your city.' },
-  { title: 'Movie Theatre Ads', text: 'On-screen ads in nearby cinemas.' },
-  { title: 'Digital Marketing', text: 'Google ads targeted around your store location.' },
-  { title: 'Social Media Marketing', text: 'Your store promoted on D2C social channels.' },
-  { title: 'Newspaper Pamphlets', text: 'Pamphlet drops in your catchment area.' },
-  { title: 'POS & Retail Software', text: 'Barcode scanner, billing software & training.' },
-  { title: 'Seller Support & Re-ordering', text: 'Easy restocking directly from the brand owner.' },
-  { title: 'No MOQ Policy', text: 'No minimum order quantity on re-orders.' },
-  { title: 'Courier Business', text: 'Additional income through courier services.' },
+  { title: 'Celebrity Endorsement', text: 'Posters of our brand ambassadors.' },
+  { title: 'Visibility – Hoardings', text: 'Sign boards on streets and glow sign boards.' },
+  { title: 'Radio Promotions' },
+  { title: 'Movie Theater Ads' },
+  { title: 'Digital Marketing', text: 'Ads run near your store location.' },
+  { title: 'Social Media Marketing', text: 'Your store advertised on our social media platform.' },
+  { title: 'Newspaper Pamphlets' },
+  { title: 'POS & Retail Software', text: 'Bar code scanner, retail software training and subscription.' },
+  { title: 'Seller Support & Re-ordering' },
+  { title: 'No MOQ Policy' },
+  { title: 'Courier Business' },
 ]
 
 export const feeIncludes = [
@@ -409,7 +407,6 @@ export const storeGallery = [
   '/images/store-d2c-world.webp',
   '/images/store-gurugram-real.webp',
 ]
-
 export const press = [
   { title: 'Brand Capital invests in D2C Ecommerce', source: 'Brand Capital', image: '/images/poster-brand-capital.webp' },
   { title: 'D2C Ecommerce raises ₹6 crore in seed funding', source: 'Mint', image: '/images/press-162.webp' },
@@ -428,7 +425,7 @@ export const celebrityGallery = [
   { image: '/images/hilife-shamshera-promo.webp', caption: 'HiLife film promotion' },
   { image: '/images/hilife-plan-a-plan-b.webp', caption: 'HiLife celebrity integration' },
   { image: '/images/hilife-celeb-gift.webp', caption: 'Celebrity gifting' },
-  { image: '/images/celeb-events.webp', caption: 'Brand events' },
+  { image: '/images/celeb-events.webp', caption: 'Celebrity film promotions' },
 ]
 
 export const posters = [
@@ -445,17 +442,17 @@ export const posters = [
 
 export const journey = [
   { step: 'Enquire', text: 'Fill the application form on this website.' },
-  { step: 'Consultation Call', text: 'One-on-one call on investment, ROI and location.' },
-  { step: 'Store Visit', text: 'Visit our Gurugram store, or join a video call with the founder.' },
+  { step: 'Consultation Call', text: '1-on-1 consultation call with the sales team.' },
+  { step: 'Store Visit', text: 'Meet at our Gurugram store, or join a video call if you are outstation.' },
   { step: 'Sign LOI', text: 'Letter of Intent with a token advance.' },
-  { step: 'Store Setup', text: 'Property help, branding, fixtures, inventory and training.' },
-  { step: 'Grand Launch', text: 'Marketing boost in your city and ongoing growth support.' },
+  { step: 'Store Setup', text: 'Help with property selection, then branding, fixtures, inventory and marketing support.' },
+  { step: 'Growth Support', text: 'Dedicated franchise account manager and monthly business strategy calls.' },
 ]
 
 export const faqs = [
   {
     q: 'What are the expected sales of a D2C Mall store?',
-    a: 'D2C Mall offers affordable products with 2000+ SKUs. Expected monthly sales are ₹6–8 Lakhs depending on your city population. D2C products also sell across all major online platforms, with online sales of ₹40 Cr+.',
+    a: 'D2C Mall offers affordable products with 2000+ SKUs. Expected sales will touch ₹6–8 Lakhs depending on your city population. D2C products are also available across all online platforms, with sales there of ₹40 Cr+.',
   },
   {
     q: 'What margins do I get on products?',

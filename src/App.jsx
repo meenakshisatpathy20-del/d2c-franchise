@@ -8,6 +8,7 @@ const Home = lazy(() => import('./pages/Home'))
 const Models = lazy(() => import('./pages/Models'))
 const Catalogue = lazy(() => import('./pages/Catalogue'))
 const BrandPage = lazy(() => import('./pages/BrandPage'))
+const WhyD2C = lazy(() => import('./pages/WhyD2C'))
 
 export default function App() {
   return (
@@ -15,7 +16,7 @@ export default function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="models" element={<Models />} />
-        <Route path="why-d2c" element={<ComingSoon title="Why D2C" />} />
+        <Route path="why-d2c" element={<WhyD2C />} />
         <Route path="catalogue" element={<Catalogue />} />
         <Route path="catalogue/:brandId" element={<BrandPage />} />
         <Route path="brands" element={<Navigate to="/catalogue" replace />} />
